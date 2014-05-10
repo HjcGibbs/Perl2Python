@@ -1,0 +1,48 @@
+Hi!
+
+This was an assignment I worked on for a course in Software Construction at 
+UNSW in 2013. The project was challenging and easily the biggest one that
+I had undertaken up unti that point. The end result was something that I was
+quite proud of, I spent many hours invested in learning how to parse perl as
+a younger and more naive programmer but I still managed to pull together a
+respectable (at least in my opinion) piece of software. That being said, if
+you are currently taking the aforementioned course I suggested that you
+avert your eyes and try to tackle this on your own. It is hard, but doable
+and rewarding. Use this for inspiration at the very least, but I explicitly 
+deny permission to anybody to submit any portion of the work in this repo as
+there own.
+
+The aim of this script was to automate the translation of perl code into 
+equivalent python scripts. Perl offers a lot of syntactical freedom
+which means that any compiler of perl must be able to cope with a certain
+level of flexibility in syntax. As it so turns out, Perl was the best 
+language to write such a task in, out of the languages which I know. The 
+Script is by no means comprehensive but it will automate the translation of
+a large amount of common code. The script works by splitting perl into
+large blocks of code e.g. if-statments, loops etc and then recursively 
+translating the sub-blocks of these blocks. If something cannot be translated
+it is commented out, hopefully so that somebody can come and translate it by 
+hand.
+
+Due to the nature of perl, if any hacky-tricky-syntactical-magic is used 
+in your script then expect the python to be at least a little broken. It has 
+been a while since I last touched this code but I think it can handle the 
+following fairly well:
+
+-Variables
+-Arrays
+-Loops
+-Conditionals
+-Print statements
+-Functions (probably not very well)
+-Regex (limited to match and sed iirc)
+
+Hashs are not implemented and Arrays have limited functionality. One day I 
+may revisit this with knowledge of parse trees or another more involved
+approach, but I am happy to have this as a relic of what I could
+accomplish in my youth for now.
+
+Feel free to use this, or to appropriate it for your own use, unless it violates
+a condition which I have expressed elsewhere.
+
+-Harry Gibbs
